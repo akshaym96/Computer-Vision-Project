@@ -101,6 +101,20 @@ In this method, we have used features from the penultimate linear layer which ou
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+### References
+
+[1] F. Perronnin and C. Dance. Fisher kernels on visual vocabularies for image categorization. In Proc. CVPR, 2006.
+[2] Florent Perronnin, Jorge Sánchez, and Thomas Mensink. Improving the fisher kernel for large-scale image classification. In Proc. ECCV, 2010.
+[3] Documentation of Ggmm - http://ebattenberg.github.io/ggmm/cpu.html
+[4] GMMs using CUDA (via CUDAMat) - https://github.com/ebattenberg/ggmm
+[5] Fisher Code is used as reference code and modified - https://github.com/jacobgil/pyfishervector
+[6] VLFeat - http://www.vlfeat.org/api/fisher.html
+[7] Scikit Learn - https://scikit-learn.org/
+[8] Pytorch tutorials
+[9] Numpy - https://docs.scipy.org/doc/numpy/reference/
+[10] Kaggle - https://www.kaggle.com/c/yelp-restaurant-photo-classification
+
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/akshaym96/Computer-Vision-Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
