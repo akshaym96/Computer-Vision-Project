@@ -43,11 +43,11 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](file.path)
+[Link](url) and ![Image](https://github.com/akshaym96/Computer-Vision-Project/blob/master/overview.png)
 ```
 
 
-### Method -1 SIFT, Random Forest
+### Method-1 SIFT, Random Forest
 
 
 In this method, features for both train and test images were extracted using SIFT. Then these descriptors were used to build clusters using K-Means. The clusters from K-Means are used to build the histograms for the train and test images. The extracted histograms are fed to 9 Random Forest Classifier for training and testing one 9 different available labels.
@@ -63,6 +63,11 @@ Accuracy:-
 Strict Match:-  36.7031 %
 One Mismatch:-  40.8372%
 Two Mismatch:-  51.2016%
+
+### Method-2  VGG + Fisher vectors
+
+In this method, we use image features extracted by VGG model, run fisher vectors over the features to get the global descriptors and train a Multi-Output SVC which is used as the classifier. Since the data set is of varied image sizes, we are taking only 500*375*3 image sizes. There are 2 types of preprocessing on images were, one is direct resize to 224*224*3 and other method is taking 7 cropped images averages which overlap at various positions of the image.
+
 
 
 
