@@ -8,15 +8,15 @@ Insert image here
 The original dataset contains nearly 2.3 lakh images taken by the users. Each photo is assigned a id called photoID. Each photoID is mapped to a businessID and each of the businessID is assigned multiple labels as shown in the figure above.
 
 The different labels are listed below:
-0: good_for_lunch
-1: good_for_dinner
-2: takes_reservations
-3: outdoor_seating
-4: restaurant_is_expensive
-5: has_alcohol
-6: has_table_service
-7: ambience_is_classy
-8: good_for_kids 
+- 0: good_for_lunch
+- 1: good_for_dinner
+- 2: takes_reservations
+- 3: outdoor_seating
+- 4: restaurant_is_expensive
+- 5: has_alcohol
+- 6: has_table_service
+- 7: ambience_is_classy
+- 8: good_for_kids 
 
 
 
