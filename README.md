@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+## Yelp Photo Classification Task
+
+We need to predict the labels describing the business attributes of restaurants from the user submitted pictures. This is a Multi-Instance Multi-Label (MIML) classification problem. Each photo is assigned a business id and each business id is assigned multiple labels as given below.
+The problem was launched as Kaggle competition. [10]
+
 
 You can use the [editor on GitHub](https://github.com/akshaym96/Computer-Vision-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -23,7 +27,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](overview.png)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
