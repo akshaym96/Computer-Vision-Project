@@ -103,16 +103,16 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### References
 
-[1] F. Perronnin and C. Dance. Fisher kernels on visual vocabularies for image categorization. In Proc. CVPR, 2006.
-[2] Florent Perronnin, Jorge Sánchez, and Thomas Mensink. Improving the fisher kernel for large-scale image classification. In Proc. ECCV, 2010.
-[3] Documentation of Ggmm - http://ebattenberg.github.io/ggmm/cpu.html
-[4] GMMs using CUDA (via CUDAMat) - https://github.com/ebattenberg/ggmm
-[5] Fisher Code is used as reference code and modified - https://github.com/jacobgil/pyfishervector
-[6] VLFeat - http://www.vlfeat.org/api/fisher.html
-[7] Scikit Learn - https://scikit-learn.org/
-[8] Pytorch tutorials
-[9] Numpy - https://docs.scipy.org/doc/numpy/reference/
-[10] Kaggle - https://www.kaggle.com/c/yelp-restaurant-photo-classification
+- [1] F. Perronnin and C. Dance. Fisher kernels on visual vocabularies for image categorization. In Proc. CVPR, 2006.
+- [2] Florent Perronnin, Jorge Sánchez, and Thomas Mensink. Improving the fisher kernel for large-scale image classification. In Proc. ECCV, 2010.
+- [3] Documentation of Ggmm - http://ebattenberg.github.io/ggmm/cpu.html
+- [4] GMMs using CUDA (via CUDAMat) - https://github.com/ebattenberg/ggmm
+- [5] Fisher Code is used as reference code and modified - https://github.com/jacobgil/pyfishervector
+- [6] VLFeat - http://www.vlfeat.org/api/fisher.html
+- [7] Scikit Learn - https://scikit-learn.org/
+- [8] Pytorch tutorials
+- [9] Numpy - https://docs.scipy.org/doc/numpy/reference/
+- [10] Kaggle - https://www.kaggle.com/c/yelp-restaurant-photo-classification
 
 
 ### Jekyll Themes
