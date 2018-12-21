@@ -75,8 +75,29 @@ The image features are extracted using a pre-trained VGG-16 model. In this model
 
 ### - Fisher Vectors
 
+Fisher Vectors was introduced in the paper, authored by F. Perronnin and C. Dance[1] and Florent Perronnin, Jorge Sánchez, and Thomas Mensink[2]. The FV is an image representation obtained by pooling local image features. It is frequently used as a global image descriptor in visual classification.
+While the FV can be derived as a special, approximate, and improved case of the general Fisher Kernel framework, it is easy to describe directly. Let I=(x1,…,xN) be a set of D dimensional feature vectors (e.g. SIFT descriptors) extracted from an image. Let Θ=(μk,Σk,πk:k=1,…,K) be the parameters of a Gaussian Mixture Model fitting the distribution of descriptors. For each mode k, consider the mean and covariance deviation vectors. The FV of image I is the stacking of the vectors uk and then of the vectors vk for each of the K modes in the Gaussian mixtures.
 
 
+For implementation , GGMM uses Cuda via CudaMat was used to generate the Gaussian Mixture Model[3][4].
+Regarding Fisher Vector python implementation, there is no library implementation. So we used a reference implementation[5]  and modified it accordingly to fit the GGMM model.
+
+
+### Method 3 - Res-Net + Multi-Output SVM Classifier
+
+Res-Net50 and Res-Net10 was experimented and the behavior and performance of both were studied. Res-Net101 ran for 4.2 hours and Res-net50 took comparatively less time of 3.5 hours. In Res-Net101 model, a dropout layer of 0.2 and the linear layer was added in the end to prevent overfitting and to bring down the count of layers from 4096 to 2048 before feeding it to the model. The performance of Res-Net101 was higher than the Res-Net50. A slight increase in accuracy of 1.9% was seen. 
+
+Features from the Res-Net was fed to the Multi-Output SVM model since they are less prone to overfitting. The Res-Net network is fine-tuned as above and can be fine-tuned some more in several different ways. It gives the user more freedom to access and modify the parts of the network which fairly affects the outcome. 
+
+
+### Method 4 - SIFT + Ensemble model
+
+This model uses Bag of visual words to extract the features using SIFT with a dense sampling of stride 50 and scale of 20. Then the image id is mapped with each of the business ids. Many pictures would have been taken in the same restaurant. So all these pictures will be mapped to the same business id and their labels. Then an ensemble model was built consisting of scikit-learn models (Decision tree Classifier, Random Forest Classifier, Nearest Neighbors, GradientBoostingClassifier, SGDClassifier). These sklearn models are fed to Multi-Output classifier since the labels in our problem is an array of values containing 0 and 1. Using an ensemble of models for predicting is proving to give better results than using a single model. The results of all the models are compared and the result predicted by most of the models is taken as the output. In case, all the models give a varied result, the prediction of the model with the highest accuracy is taken as the final prediction. But in these models, there is less power given to the user to work with the parameters which affect the outcome of each of the model. For this data and for the various Res-Net architectures and parameters I tried above, Res-Net performs better in this case.
+
+
+### Method 5 - AlexNet + OneVsRestClassifier
+
+In this method, we have used features from the penultimate linear layer which outputs 4096 dim vector.  These features are then fed to OneVsRestClassifier for training and testing. 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
