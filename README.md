@@ -43,7 +43,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](https://github.com/akshaym96/Computer-Vision-Project/blob/master/overview.png)
+[Link](url) and ![Overview](https://github.com/akshaym96/Computer-Vision-Project/blob/master/overview.png)
 ```
 
 
@@ -67,6 +67,13 @@ Two Mismatch:-  51.2016%
 ### Method-2  VGG + Fisher vectors
 
 In this method, we use image features extracted by VGG model, run fisher vectors over the features to get the global descriptors and train a Multi-Output SVC which is used as the classifier. Since the data set is of varied image sizes, we are taking only 500*375*3 image sizes. There are 2 types of preprocessing on images were, one is direct resize to 224*224*3 and other method is taking 7 cropped images averages which overlap at various positions of the image.
+
+### - VGG
+
+The image features are extracted using a pre-trained VGG-16 model. In this model the last 3 layers have been removed mainly the fully connected layer, Relu and Dropout. So the outputs of the model are 4096. The architecture is as shown below.
+
+
+### - Fisher Vectors
 
 
 
