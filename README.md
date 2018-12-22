@@ -95,6 +95,8 @@ While the FV can be derived as a special, approximate, and improved case of the 
 For implementation , GGMM uses Cuda via CudaMat was used to generate the Gaussian Mixture Model[3][4].
 Regarding Fisher Vector python implementation, there is no library implementation. So we used a reference implementation[5]  and modified it accordingly to fit the GGMM model.
 
+![Fisher-VGG](/fisher-vgg.png)
+
 
 ### Method 3 - Res-Net + Multi-Output SVM Classifier
 
@@ -111,6 +113,11 @@ This model uses Bag of visual words to extract the features using SIFT with a de
 ### Method 5 - AlexNet + OneVsRestClassifier
 
 In this method, we have used features from the penultimate linear layer which outputs 4096 dim vector.  These features are then fed to OneVsRestClassifier for training and testing. 
+
+![alexNet](/alexnet.png)
+
+
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
