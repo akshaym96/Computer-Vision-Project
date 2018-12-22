@@ -134,6 +134,9 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 - [9] Numpy - https://docs.scipy.org/doc/numpy/reference/
 - [10] Kaggle - https://www.kaggle.com/c/yelp-restaurant-photo-classification
 
+### To-Dos
+- [ ] Training a deep learning model from scratch.
+
 
 Thanks for stopping by  :+1:
 
