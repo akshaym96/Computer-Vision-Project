@@ -1,7 +1,1 @@
-defaults:
-  - scope:
-      path: "overview.png"
-    values:
-      image: true
-
 theme: jekyll-theme-dinky
