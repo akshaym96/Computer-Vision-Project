@@ -47,7 +47,8 @@ Syntax highlighted code block
 ![Overview]
 (/overview.png)
 ```
-
+![Overview]
+(/overview.png)
 
 ### Method-1 SIFT, Random Forest
 
@@ -116,9 +117,9 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 - [9] Numpy - https://docs.scipy.org/doc/numpy/reference/
 - [10] Kaggle - https://www.kaggle.com/c/yelp-restaurant-photo-classification
 
-```markdown
+
 Thanks for stopping by :+1:
-```
+
 
 ### Jekyll Themes
 
