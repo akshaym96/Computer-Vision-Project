@@ -81,11 +81,15 @@ In this method, we use image features extracted by VGG model, run fisher vectors
 
 The image features are extracted using a pre-trained VGG-16 model. In this model the last 3 layers have been removed mainly the fully connected layer, Relu and Dropout. So the outputs of the model are 4096. The architecture is as shown below.
 
+![VGG](/VGG.png)
+
 
 ### - Fisher Vectors
 
 Fisher Vectors was introduced in the paper, authored by F. Perronnin and C. Dance[1] and Florent Perronnin, Jorge Sánchez, and Thomas Mensink[2]. The FV is an image representation obtained by pooling local image features. It is frequently used as a global image descriptor in visual classification.
 While the FV can be derived as a special, approximate, and improved case of the general Fisher Kernel framework, it is easy to describe directly. Let I=(x1,…,xN) be a set of D dimensional feature vectors (e.g. SIFT descriptors) extracted from an image. Let Θ=(μk,Σk,πk:k=1,…,K) be the parameters of a Gaussian Mixture Model fitting the distribution of descriptors. For each mode k, consider the mean and covariance deviation vectors. The FV of image I is the stacking of the vectors uk and then of the vectors vk for each of the K modes in the Gaussian mixtures.
+
+![Fisher](/fisher.png)
 
 
 For implementation , GGMM uses Cuda via CudaMat was used to generate the Gaussian Mixture Model[3][4].
