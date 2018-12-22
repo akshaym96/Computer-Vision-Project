@@ -43,12 +43,11 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and 
-![Overview]
-(/overview.png)
+[Link](url) 
 ```
-![Overview]
-(/overview.png)
+
+
+![Overview](/overview.png)
 
 ### Method-1 SIFT, Random Forest
 
