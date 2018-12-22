@@ -3,7 +3,7 @@
 We need to predict the labels describing the business attributes of restaurants from the user submitted pictures. This is a Multi-Instance Multi-Label (MIML) classification problem. Each photo is assigned a business id and each business id is assigned multiple labels as given below.
 The problem was launched as Kaggle competition. [10]
 
-Insert image here
+![Overview](/overview.png)
 
 The original dataset contains nearly 2.3 lakh images taken by the users. Each photo is assigned a id called photoID. Each photoID is mapped to a businessID and each of the businessID is assigned multiple labels as shown in the figure above.
 
@@ -18,6 +18,9 @@ The different labels are listed below:
 - 7: ambience_is_classy
 - 8: good_for_kids 
 
+
+
+![Example](/example.png)
 
 
 You can use the [editor on GitHub](https://github.com/akshaym96/Computer-Vision-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
@@ -47,12 +50,16 @@ Syntax highlighted code block
 ```
 
 
-![Overview](/overview.png)
+
 
 ### Method-1 SIFT, Random Forest
 
 
 In this method, features for both train and test images were extracted using SIFT. Then these descriptors were used to build clusters using K-Means. The clusters from K-Means are used to build the histograms for the train and test images. The extracted histograms are fed to 9 Random Forest Classifier for training and testing one 9 different available labels.
+
+
+![RandomForest](/random_forest.png)
+
 
 Feature Extraction time:-
 - Train Images:-   15 hours 37 minutes 37 seconds
