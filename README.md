@@ -43,7 +43,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Overview](https://github.com/akshaym96/Computer-Vision-Project/blob/master/overview.png)
+[Link](url) and ![Overview](/overview.png)
 ```
 
 
