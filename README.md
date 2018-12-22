@@ -135,7 +135,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 - [10] Kaggle - https://www.kaggle.com/c/yelp-restaurant-photo-classification
 
 
-Thanks for stopping by :+1:
+Thanks for stopping by  :+1:
 
 
 ### Jekyll Themes
