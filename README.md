@@ -22,10 +22,10 @@ The different labels are listed below:
 
 ![Example](/example.png)
 
+ 
+<!--You can use the [editor on GitHub](https://github.com/akshaym96/Computer-Vision-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-You can use the [editor on GitHub](https://github.com/akshaym96/Computer-Vision-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!--Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files. 
 
 <!-- ### Markdown
 
@@ -117,9 +117,7 @@ In this method, we have used features from the penultimate linear layer which ou
 ![alexNet](/alexnet.png)
 
 
-
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<!-- For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### References
 
