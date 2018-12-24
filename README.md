@@ -116,9 +116,6 @@ In this method, we have used features from the penultimate linear layer which ou
 
 ![alexNet](/alexnet.png)
 
-
-<!-- For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). -->
-
 ### References
 
 - [1] F. Perronnin and C. Dance. Fisher kernels on visual vocabularies for image categorization. In Proc. CVPR, 2006.
