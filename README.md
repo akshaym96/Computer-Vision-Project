@@ -117,7 +117,7 @@ In this method, we have used features from the penultimate linear layer which ou
 ![alexNet](/alexnet.png)
 
 
-<!-- For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<!-- For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). -->
 
 ### References
 
